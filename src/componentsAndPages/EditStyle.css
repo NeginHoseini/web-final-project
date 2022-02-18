@@ -1,0 +1,68 @@
+.movieEditContainer{
+    height: 100vh;
+    background: #777a7a;
+    padding: 2%;
+}
+
+.innerEditCnt{
+    padding: 2%;
+    background: #114431;
+    width: 50%;
+    height: 85vh;
+    margin: 3% auto;
+    border-radius: 15px;
+}
+
+.editTitle{
+    font-family: "Bahnschrift Condensed";
+    color:white;
+}
+
+.formLbl{
+    font-family: Bahnschrift SemiCondensed;
+    color: white;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-size: large;
+    display: block;
+
+}
+
+.editInputs{
+    display: block;
+    background-color: #c1c4c3;
+
+}
+
+.ePoster{
+    width: 85%;
+    background-color: #c1c4c3;
+}
+
+.eDesc{
+    width: 85%;
+    height: 20vh;
+    background-color: #c1c4c3;
+    display: block;
+    margin-bottom: 5%;
+}
+
+.editBtn{
+    background-color: #343636;
+    color: white;
+    width: 20%;
+    height: 5vh;
+    margin-bottom: 2%;
+    margin-left: 25%;
+}
+
+.editBtn:hover ,
+.cancelBtn:hover{
+    background-color: #777a7a;
+}
+
+.cancelBtn{
+    background-color: #343636;
+    color: white;
+    margin-left: 40%;
+}

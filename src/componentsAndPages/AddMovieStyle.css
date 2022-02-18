@@ -1,0 +1,45 @@
+.addContainer {
+    box-shadow: #0d412f 5px 5px 5px 5px;
+    margin-top: 2%;
+    background-image: url("../images/add.jpg") ;
+    height: 70vh;
+    position: relative;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.inForm{
+    margin-top: 2%;
+    position: absolute;
+    width: 50%;
+    right: 0;
+}
+
+
+.inForm input{
+    margin: 3%;
+    height: 5vh;
+}
+
+.inForm textarea{
+    width: 70%;
+    height: 25vh;
+}
+
+.poster{
+    width: 70%;
+}
+
+.addBtn{
+    width: 20%;
+    background: #0d412f;
+    color: white;
+    font-family: Bahnschrift Condensed;
+}
+
+.addBtn:hover{
+    background: #869893;
+    color: black;
+}

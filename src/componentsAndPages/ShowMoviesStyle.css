@@ -1,0 +1,16 @@
+.moviesCnt{
+    margin : 5% auto;
+    width: 95%;
+    background-color: #114431;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+.movieTitle{
+    color:white;
+    font-family: Andalus;
+}
+
+.viewBtn{
+    background-color:#114431;
+}
