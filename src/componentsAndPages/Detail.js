@@ -24,8 +24,7 @@ export default function Detail(){
     return(
         <div className={"movieDetailContainer"}>
             <div className={"innerCnt shadow"}>
-
-
+                {movie?
                     <div className={"row"}>
                              <div className="col-md-5">
                                   <img
@@ -43,6 +42,7 @@ export default function Detail(){
                         </div>
 
                     </div>
+                    :<h1 style={{color:"white"}}>Movie Not Found</h1> }
             </div>
         </div>
 

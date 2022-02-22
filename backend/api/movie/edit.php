@@ -13,9 +13,12 @@ $movie = json_decode( file_get_contents('php://input') );
         $stmt->bindParam(':description', $movie->description);
         $stmt->bindParam(':poster', $movie->poster);
 
-        if($stmt->execute()) {
-            $response = ['status' => 1, 'message' => 'Record updated successfully.'];
-        } else {
-            $response = ['status' => 0, 'message' => 'Failed to update record.'];
-        }
-        echo json_encode($response);
+            try {
+                $stmt->execute();
+                $response = ['status' => 1, 'message' => 'Record updated successfully.'];
+            }
+            catch (Exception $e) {
+                $response = ['status' => 0, 'message' => 'Failed to update record.'];
+            }
+
+            echo json_encode($response);

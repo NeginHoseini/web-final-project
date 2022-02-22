@@ -38,7 +38,8 @@ export default function EditMovie(){
         return(
         <div className={"movieEditContainer"}>
             <div className={"innerEditCnt shadow"}>
-
+                {movie?
+                    <>
                 <h1  className={"editTitle"}>Edit Movie</h1>
                 <form onSubmit={handleSubmit} className="container m-4 text-start">
                     <div>
@@ -66,7 +67,8 @@ export default function EditMovie(){
 
                     </div>
                 </form>
-
+                    </>
+                    :<h1 style={{color:"white"}}>Movie Not Found</h1> }
             </div>
         </div>
     )
