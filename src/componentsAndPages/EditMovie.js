@@ -6,7 +6,13 @@ import axios from "axios";
 export default function EditMovie(){
     const navigate = useNavigate();
 
-    const [movie, setMovie] = useState([]);
+    const[movie,setMovie]=useState(
+        {
+            name:'',
+            year:'',
+            description:'',
+            poster:'',
+        });
 
     const {id} = useParams();
 
